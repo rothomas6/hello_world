@@ -8,7 +8,10 @@ app.controller("myCtrl", function($scope) {
     $scope.products = ["Milk", "Bread", "Cheese"];
     $scope.addItem = function () {
         $scope.products.push($scope.addMe);
-    }    
+    } 
+	$scope.clearItems = function () {
+        $scope.products=[];
+    }    	
 });
 </script>
 
@@ -18,6 +21,7 @@ app.controller("myCtrl", function($scope) {
   </ul>
   <input ng-model="addMe">
   <button ng-click="addItem()">Add</button>
+  <button ng-click="clearItems()">Clear All</button>
 </div>
 
 <p>Write in the input field to add items.</p>
