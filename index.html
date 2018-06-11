@@ -1,30 +1,8 @@
 <html>
-<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.9/angular.min.js"></script>
-<body>
-
-<script>
-var app = angular.module("myShoppingList", []); 
-app.controller("myCtrl", function($scope) {
-    $scope.products = ["Milk", "Bread", "Cheese"];
-    $scope.addItem = function () {
-        $scope.products.push($scope.addMe);
-    } 
-	$scope.clearItems = function () {
-        $scope.products=[];
-    }    	
-});
-</script>
-
-<div ng-app="myShoppingList" ng-controller="myCtrl">
-  <ul>
-    <li ng-repeat="x in products">{{x}}</li>
-  </ul>
-  <input ng-model="addMe">
-  <button ng-click="addItem()">Add</button>
-  <button ng-click="clearItems()">Clear All</button>
-</div>
-
-<p>Write in the input field to add items.</p>
-
-</body>
+	<head>
+		<title>Visa status applet </title>
+	</head>
+	<body>
+		<applet code="Main.class" archive="Main.jar" width=640 height=480>
+	</body>
 </html>
